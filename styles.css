@@ -7,9 +7,11 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    color: #330;
-    background-color: #f5f5f5;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc; /* Fondo blanco crema */
+    color: #333; /* Color de texto oscuro */
 }
 
 header {
