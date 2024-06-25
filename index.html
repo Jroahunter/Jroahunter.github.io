@@ -41,7 +41,7 @@
     </section>
     <section id="contact">
         <h2>Contacto</h2>
-        <form action="mailto:jroahunter@fen.uchile.cl" method="post" enctype="text/plain">
+        <form action="mailto:jroah@fen.uchile.cl" method="post" enctype="text/plain">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
@@ -49,11 +49,37 @@
             <label for="message">Mensaje:</label>
             <textarea id="message" name="message" required></textarea>
             <button type="submit">Enviar</button>
-        </form>
+            </form>
+    <div id="form-status"></div>
+        </form>  
     </section>
     <footer>
         <p>&copy; 2024 Martucha</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita que el formulario se envíe automáticamente
+
+        // Envía el formulario usando Fetch API (puedes usar Axios u otro método si prefieres)
+        fetch(this.action, {
+            method: 'POST',
+            body: new FormData(this),
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            // Muestra el mensaje de confirmación si el formulario se envía correctamente
+            document.getElementById('form-status').innerHTML = '<p>Tu mensaje se ha enviado correctamente. Gracias.</p>';
+            document.getElementById('contact-form').reset(); // Resetea el formulario después del envío
+        })
+        .catch(error => {
+            // Muestra un mensaje de error si hay algún problema al enviar el formulario
+            document.getElementById('form-status').innerHTML = '<p>Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.</p>';
+        });
+    });
+</script>
+
 </body>
 </html>
