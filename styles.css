@@ -23,10 +23,19 @@ header {
     z-index: 1000;
 }
 
+.top-bar {
+    background-color: #666;
+    text-align: center;
+    padding: 20px 0;
+}
+
 header h1 {
     margin: 0;
-    padding-left: 20px;
-    font-size: 1.8em;
+    font-size: 2.5em;
+}
+
+nav {
+    background-color: #444;
 }
 
 nav ul {
@@ -34,12 +43,12 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    display: flex; /* Alinear los elementos como flexbox */
-    justify-content: center; /* Centrar los elementos horizontalmente */
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    float: none; /* Eliminar float para que funcione con flexbox */
+    float: none;
 }
 
 nav ul li a {
@@ -54,68 +63,47 @@ nav ul li a:hover {
     background-color: #555;
 }
 
-section {
-    padding: 60px 0;
+.hero {
+    position: relative;
+    overflow: hidden;
 }
 
-section h2 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 30px;
+.hero-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
+.slide {
+    flex: 0 0 100%;
+}
+
+.slide img {
     width: 100%;
-    bottom: 0;
-}
-
-/* Estilos específicos */
-#inicio {
-    background-color: #f2f2f2;
-}
-
-#biografia {
-    background-color: #e6e6e6;
-    padding: 40px 0;
-    text-align: center;
-}
-
-#biografia img {
-    max-width: 100%;
     height: auto;
-    margin-bottom: 20px;
 }
 
-#proyectos {
-    background-color: #f2f2f2;
+.slider-prev, .slider-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }
 
-#venta {
-    background-color: #e6e6e6;
+.slider-prev {
+    left: 10px;
 }
 
-#cursos {
-    background-color: #f2f2f2;
+.slider-next {
+    right: 10px;
 }
 
-#contacto {
-    background-color: #e6e6e6;
-    padding: 40px 0;
-}
-
-.contact-info {
-    text-align: center;
-}
-
-.contact-info p {
-    margin: 10px 0;
-}
-
-.contact-info strong {
-    font-weight: bold;
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
 }
