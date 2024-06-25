@@ -54,30 +54,7 @@
     <footer>
         <p>&copy; 2024 Martucha</p>
     </footer>
-    <script src="script.js"></script>
-    <script>
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Evita que el formulario se envíe automáticamente
-
-        // Envía el formulario usando Fetch API (puedes usar Axios u otro método si prefieres)
-        fetch(this.action, {
-            method: 'POST',
-            body: new FormData(this),
-            headers: {
-                'Accept': 'application/json'
-            }
-        })
-        .then(response => {
-            // Muestra el mensaje de confirmación si el formulario se envía correctamente
-            document.getElementById('form-status').innerHTML = '<p>Tu mensaje se ha enviado correctamente. Gracias.</p>';
-            document.getElementById('contact-form').reset(); // Resetea el formulario después del envío
-        })
-        .catch(error => {
-            // Muestra un mensaje de error si hay algún problema al enviar el formulario
-            document.getElementById('form-status').innerHTML = '<p>Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.</p>';
-        });
-    });
-</script>
+   
 
 </body>
 </html>
