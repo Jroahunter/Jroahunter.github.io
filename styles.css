@@ -10,8 +10,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #333; /* Cambia a tu tono de gris oscuro */
-    color: #fff; /* Color de texto */
+    background-color: #f4f4f4;
 }
 
 header {
