@@ -34,10 +34,12 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex; /* Alinear los elementos como flexbox */
+    justify-content: center; /* Centrar los elementos horizontalmente */
 }
 
 nav ul li {
-    float: left;
+    float: none; /* Eliminar float para que funcione con flexbox */
 }
 
 nav ul li a {
@@ -70,4 +72,50 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Estilos específicos */
+#inicio {
+    background-color: #f2f2f2;
+}
+
+#biografia {
+    background-color: #e6e6e6;
+    padding: 40px 0;
+    text-align: center;
+}
+
+#biografia img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#proyectos {
+    background-color: #f2f2f2;
+}
+
+#venta {
+    background-color: #e6e6e6;
+}
+
+#cursos {
+    background-color: #f2f2f2;
+}
+
+#contacto {
+    background-color: #e6e6e6;
+    padding: 40px 0;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info strong {
+    font-weight: bold;
 }
