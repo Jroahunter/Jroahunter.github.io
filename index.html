@@ -8,9 +8,11 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="top-bar">
             <h1>Mi Galería de Arte</h1>
-            <nav>
+        </div>
+        <nav>
+            <div class="container">
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#biografia">Biografía</a></li>
@@ -19,52 +21,29 @@
                     <li><a href="#cursos">Cursos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
-    <section id="inicio">
-        <div class="container">
-            <h2>Bienvenido a Mi Galería de Arte</h2>
-            <p>Texto introductorio o descripción breve de tu galería y tus obras.</p>
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide"><img src="ruta/a/tu/imagen1.jpg" alt="Imagen 1"></div>
+            <div class="slide"><img src="ruta/a/tu/imagen2.jpg" alt="Imagen 2"></div>
+            <div class="slide"><img src="ruta/a/tu/imagen3.jpg" alt="Imagen 3"></div>
+            <!-- Agrega más slides según sea necesario -->
         </div>
+        <button class="slider-prev">&#10094;</button>
+        <button class="slider-next">&#10095;</button>
     </section>
 
-    <section id="biografia">
+    <!-- Resto de las secciones -->
+    
+    <footer>
         <div class="container">
-            <h2>Biografía</h2>
-            <h3>Subtítulo aquí</h3>
-            <img src="ruta/a/tu/imagen.jpg" alt="Descripción de la imagen">
-            <p>Texto descriptivo o biográfico debajo de la imagen.</p>
+            <p>Derechos de autor © 2024. Todos los derechos reservados.</p>
         </div>
-    </section>
-
-    <section id="proyectos">
-        <div class="container">
-            <h2>Proyectos</h2>
-            <p>Lista o descripción de tus proyectos artísticos más destacados.</p>
-        </div>
-    </section>
-
-    <section id="venta">
-        <div class="container">
-            <h2>Sala de Ventas</h2>
-            <p>Información sobre cómo los visitantes pueden adquirir tus obras.</p>
-        </div>
-    </section>
-
-    <section id="cursos">
-        <div class="container">
-            <h2>Cursos</h2>
-            <p>Detalles sobre los cursos o talleres que ofreces relacionados con el arte.</p>
-        </div>
-    </section>
-
-    <section id="contacto">
-        <div class="container">
-            <h2>Contacto</h2>
-            <div class="contact-info">
-                <p><strong>Nombre:</strong> Tu nombre</p>
-                <p><strong>Email:</strong> tu@email.com</p>
-                <p><strong>Teléfono:</strong> +1234567890</p>
-                <p><str
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
