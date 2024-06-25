@@ -3,94 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Martucha</title>
+    <title>Mi Página</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="biografia">Biografía</a></li>
-                <li><a href="#portfolio">Portafolio</a></li>
-                <li><a href="#contact">Contacto</a></li>
-                
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Mi Nombre</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#biografia">Biografía</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section id="hero">
-        <h1>Martina Stamparini Méndez</h1>
-        <p>Artista visual y escultora.</p>
+
+    <section id="inicio" class="section">
+        <div class="container">
+            <h2>Inicio</h2>
+            <p>Bienvenido a mi página web. Aquí puedes encontrar información sobre mí y mis proyectos.</p>
+        </div>
     </section>
 
-
-
-
-
-    
-    <section id="about">
-        <h2>Sobre mí</h2>
-        <p>Soy una bomba. Me especializo en HTML, CSS y JavaScript.</p>
-    </section>
-
-    
-
-
-
-
-
- <section id="biografia" class="section">
+    <section id="biografia" class="section">
         <div class="container">
             <h2>Biografía</h2>
-            <div class="content">
-                <h1 class="title">Martu</h1>
-                <h2 class="subtitle">Belleza divina</h2>
-                <div class="text">
-                    <p>Érase una vez...</p>
-                    <p class="english">Once upon a time..</p>
-            </div>
             <div class="image">
                 <img src="pablo-valenzuela.jpg" alt="Pablo Valenzuela">
             </div>
+            <div class="content">
+                <h3>Pablo Valenzuela</h3>
+                <p>Texto de biografía...</p>
+            </div>
         </div>
     </section>
 
-
-
-    
-    
-    <section id="portfolio">
-        <h2>Portafolio</h2>
-        <div class="project">
-            
-            <img src="DSC02200.jpg" alt="Proyecto 2">.
-            <h3>Proyecto 1</h3>
-            <p>Descripción del proyecto 1.</p>
-        </div>
-        <div class="project">
-            <img src="DSC03035.jpg" alt="Proyecto 2">
-            <h3>Proyecto 2</h3>
-            <p>Descripción del proyecto 2.</p>
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="gallery">
+                <div class="project">
+                    <img src="project1.jpg" alt="Proyecto 1">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción del proyecto 1.</p>
+                </div>
+                <div class="project">
+                    <img src="project2.jpg" alt="Proyecto 2">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción del proyecto 2.</p>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <form id="contact-form" action="https://example.com/enviar-formulario" method="POST">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-        <div id="form-status"></div>
+
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="enviar.php" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="button">Enviar</button>
+            </form>
+        </div>
     </section>
+
     <footer>
-        <p>&copy; 2024 Martucha</p>
+        <p>Derechos reservados &copy; 2024</p>
     </footer>
-   
-
 </body>
 </html>
