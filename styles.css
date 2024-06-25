@@ -57,12 +57,25 @@ header nav ul li a {
 }
 
 .image img {
-    max-width: 100%;
+    max-width: 300px;
     height: auto;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
+
+
+.image img {
+    max-width: 100%; /* La imagen se ajustará al ancho máximo disponible */
+    height: auto; /* La altura se ajustará automáticamente según el ancho */
+    border-radius: 50%; /* Añade un borde redondeado (opcional) */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera alrededor de la imagen */
+    margin-bottom: 20px; /* Espacio inferior para separar del texto */
+}
+
+
+
+
 
 .text {
     text-align: left;
