@@ -91,6 +91,7 @@ nav ul li a:hover {
     border: none;
     padding: 10px;
     cursor: pointer;
+    z-index: 100;
 }
 
 .slider-prev {
@@ -100,6 +101,15 @@ nav ul li a:hover {
 .slider-next {
     right: 10px;
 }
+
+
+
+
+
+
+
+
+
 
 /* Estilos específicos para dispositivos móviles */
 @media (max-width: 768px) {
