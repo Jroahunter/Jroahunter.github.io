@@ -1,6 +1,3 @@
-
-
-
 /* Estilos generales */
 body {
     font-family: 'Trajan Sans', sans-serif;
@@ -32,6 +29,8 @@ header h1 {
 
 header nav ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 header nav ul li {
@@ -45,6 +44,8 @@ header nav ul li a {
     font-weight: bold;
     font-size: 1.2em;
 }
+
+/* Hero Section */
 .hero {
     position: relative;
     overflow: hidden;
@@ -83,6 +84,7 @@ header nav ul li a {
 .slider-next {
     right: 10px;
 }
+
 /* Secciones */
 .section {
     padding: 50px 0;
@@ -111,6 +113,7 @@ header nav ul li a {
 /* Imágenes */
 .bio img {
     max-width: 300px; /* Ajusta el tamaño máximo según tus necesidades */
+    width: 100%;
     height: auto;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -120,6 +123,7 @@ header nav ul li a {
 .gallery {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -129,7 +133,7 @@ header nav ul li a {
 }
 
 .project img {
-    max-width: 100%; /* Ajusta el tamaño máximo según tus necesidades */
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -193,4 +197,3 @@ footer {
         font-size: 2em;
     }
 }
-
