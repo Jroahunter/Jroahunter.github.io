@@ -68,7 +68,7 @@ header nav ul li a {
 
 /* Imágenes */
 .image img {
-    max-width: 100%;
+    max-width: 100px;
     height: auto;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
