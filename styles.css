@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f2f2f2;
     color: #333;
+    text-align: center; /* Centra el texto de todo el body */
 }
 
 /* Encabezado */
@@ -31,6 +32,7 @@ header nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: inline-block; /* Cambia a inline-block para centrar */
 }
 
 header nav ul li {
@@ -77,11 +79,11 @@ header nav ul li a {
     z-index: 100;
 }
 
-.slider-prev {
+slider-prev {
     left: 10px;
 }
 
-.slider-next {
+slider-next {
     right: 10px;
 }
 
@@ -95,12 +97,14 @@ header nav ul li a {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    text-align: center; /* Asegura que todo dentro de content-container esté centrado */
 }
 
 .section h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
     font-family: 'Trajan Sans Demi Bold', sans-serif;
+    text-align: center;
 }
 
 .section p {
@@ -108,6 +112,7 @@ header nav ul li a {
     line-height: 1.8;
     color: #555;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 /* Imágenes */
@@ -118,6 +123,9 @@ header nav ul li a {
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    display: block; /* Cambia a block para que el margin auto funcione */
+    margin-left: auto; /* Centra horizontalmente la imagen */
+    margin-right: auto; /* Centra horizontalmente la imagen */
 }
 
 .gallery {
@@ -130,6 +138,7 @@ header nav ul li a {
 .project {
     text-align: left;
     max-width: 300px;
+    margin: 0 auto; /* Asegura que el proyecto esté centrado */
 }
 
 .project img {
@@ -137,6 +146,9 @@ header nav ul li a {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block; /* Cambia a block para que el margin auto funcione */
+    margin-left: auto; /* Centra horizontalmente la imagen */
+    margin-right: auto; /* Centra horizontalmente la imagen */
 }
 
 /* Formulario de contacto */
