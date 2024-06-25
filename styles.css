@@ -117,7 +117,7 @@ slider-next {
 
 /* Imágenes */
 .bio img {
-    max-width: 100%; /* Ajusta el tamaño máximo según tus necesidades */
+    max-width: 50%; /* Ajusta el tamaño máximo según tus necesidades */
     width: 100%;
     height: auto;
     border-radius: 50%;
