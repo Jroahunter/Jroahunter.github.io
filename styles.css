@@ -3,7 +3,7 @@
 
 /* Estilos generales */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Trajan Sans', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
@@ -27,6 +27,7 @@ header {
 header h1 {
     font-size: 2em;
     margin-bottom: 10px;
+    font-family: 'Trajan Sans Demi Bold', sans-serif;
 }
 
 header nav ul {
@@ -97,6 +98,7 @@ header nav ul li a {
 .section h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    font-family: 'Trajan Sans Demi Bold', sans-serif;
 }
 
 .section p {
