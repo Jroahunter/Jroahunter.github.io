@@ -49,7 +49,7 @@ header nav ul li a {
 }
 
 .section .container {
-    max-width: 800px;
+    max-width: 1200px; /* Aumenta el ancho máximo del contenedor */
     margin: 0 auto;
     padding: 0 20px;
 }
