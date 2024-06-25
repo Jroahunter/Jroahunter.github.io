@@ -12,8 +12,10 @@
         <nav>
             <ul>
                 <li><a href="#about">Sobre mí</a></li>
+                <li><a href="biografia.html">Biografía</a></li>
                 <li><a href="#portfolio">Portafolio</a></li>
                 <li><a href="#contact">Contacto</a></li>
+                
             </ul>
         </nav>
     </header>
@@ -25,6 +27,14 @@
         <h2>Sobre mí</h2>
         <p>Soy una bomba. Me especializo en HTML, CSS y JavaScript.</p>
     </section>
+
+    
+<section id="biografia">
+        <h1>Biografía</h1>
+        <p>Aquí va tu biografía...</p>
+    </section>
+
+    
     <section id="portfolio">
         <h2>Portafolio</h2>
         <div class="project">
@@ -39,9 +49,9 @@
             <p>Descripción del proyecto 2.</p>
         </div>
     </section>
-    <section id="contact">
+    <section id="contacto">
         <h2>Contacto</h2>
-        <form action="mailto:jroah@fen.uchile.cl" method="post" enctype="text/plain">
+        <form id="contact-form" action="https://example.com/enviar-formulario" method="POST">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
@@ -49,7 +59,8 @@
             <label for="message">Mensaje:</label>
             <textarea id="message" name="message" required></textarea>
             <button type="submit">Enviar</button>
-            </form>
+        </form>
+        <div id="form-status"></div>
     </section>
     <footer>
         <p>&copy; 2024 Martucha</p>
